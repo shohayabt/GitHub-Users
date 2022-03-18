@@ -41,13 +41,18 @@ const setUsers = (user) =>{
     `
     <div id="user-card">
         <div class="cover-image">
-            <div class="profile-picture">
-            <img src="${user.avatar_url}">
-            </div>
+            <a href="${user.html_url}" target="_blank">
+                <div class="profile-picture">
+                <img src="${user.avatar_url}">
+                </div>
+            </a>
+ 
         </div>
         <div class="user-information">
-            <h1 class="user-name">${user.name? user.name : user.login}</h1>
-            <small style="display: block;">${user.id}</small>
+            <a href="${user.html_url}" target="_blank">
+                <h1 class="user-name">${user.name? user.name : user.login}</h1>
+            </a>
+            <small style="display: block;  color: red;">${user.id}</small>
             <span><i class="fa-solid fa-location-dot"></i>${user.location ? user.location : "can't find user location"}</span>
         </div>
         <div class="bio">
