@@ -4,16 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/fontawesome.min.css" integrity="sha512-KVdV5HNnN1f6YOANbRuNxyCnqyPICKUmQusEkyeRg4X0p8K1xCdbHs32aA7pWo6WqMZk0wAzl29cItZh8oBPYQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <title>GitHub-Users</title>
 </head>
 <body>
-    <div id="user-card">
-        <div class="cover-image">
-            <div class="profile-picture">
+    <section id="main-section">
+        <div class="search">
+            <input type="text" placeholder="Enter Your GitHub  Username">
+            <button id="search-button">Search</button>
+        </div>
+        <!-- USER CARD START FROM HERE  -->
+        <div id="user-card">
+            <div class="cover-image">
+                <div class="profile-picture">
+                </div>
+            </div>
+            <div class="user-information">
+                <h1 class="user-name">SOHAYAB </h1>
+                <small style="display: block;">user id</small>
+                <span><i class="fa-solid fa-location-dot"></i>location</span>
+            </div>
+            <div class="bio">
+                <p>Learning JavaScript</p>
+            </div>
+            <div class="others-information">
+                <div><small>Public Repos</small><small>1111</small></div>
+                <div><small>followers</small><small>1111</small></div>
+                <div><small>following</small><small>1111</small></div>
             </div>
         </div>
-        <h1 class="user-name">SOHAYAB </h1>
-    </div>
+        <!-- USER CARD END HERE  -->
+    </section>
 </body>
 </html>
