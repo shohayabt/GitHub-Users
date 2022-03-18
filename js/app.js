@@ -14,7 +14,7 @@ const loadUser = () =>{
     if(userName ==="" || typeof(userName) == Number ){
         userCard.style.display = 'none'
         showError.style.display = 'block'
-        errorMessage("Your have to input something to search. ")
+        errorMessage("You have to input something to search. ")
     }
     else{
         showError.style.display = 'none'
