@@ -2,13 +2,18 @@
 
 const userCard = document.getElementById('user-card');
 const showError = document.getElementById("error-message");
+const search = document.querySelector('.search input');
+search.addEventListener('keypress',(e) =>{
+    if(e.keyCode === 13){
+        document.getElementById('search-button').click()
+    }
+})
 
 const errorMessage = (m) => {
     showError .value = m;
 }
 const loadUser = () =>{
     userCard.innerHTML = '';
-    const search = document.querySelector('.search input');
     let userName = search.value;
     
     if(userName ==="" || typeof(userName) == Number ){

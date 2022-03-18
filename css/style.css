@@ -65,7 +65,7 @@ a{
 #user-card .cover-image{
    height: 100px;
    position: relative;
-   background-color: beige;
+   background-color: rgb(0, 0, 0);
 }
 #user-card .cover-image .profile-picture{
     position: absolute;
@@ -105,7 +105,11 @@ a{
 }
 #user-card .bio{
     padding: 10px ;
-    background: beige;
+    background: black;
+    color: white ;
+}
+#user-card .bio p{
+    color: white;
 }
 #user-card .others-information{
     display: grid;
